@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <title>Mi Curriculum</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">  
+</head>
+  <body>
+    <header>
+        <div class="encabezado">
+          <img src="images/imagenfoto.jpeg">
+          <div
+          class="mask"
+          style="
+            background: linear-gradient(
+              45deg,
+              hsla(168, 85%, 52%, 0.5),
+              hsla(263, 88%, 45%, 0.5) 100%
+            );
+          "
+        ></div>
+          <section id="info">
+            <h1 id="datos">Datos</h1>
+            
+          
+        <select  class="option" onchange="showSelected(this.value)">
+          
+          <option value="">Selecciona una opción:</option>
+          <option value="Lucas Rodriguez">Nombre</option>
+          <option value="2604648581">Telefono</option>
+          <option value="lucas_rodri12@gmail.com">e-mail</option>
+        </select>
+        <p id="selected"></p>
+          </section>
+        </div>
+      
+      
+      
+      <nav class="navegacion" class="bg-primary text-white">
+        <ul style="list-style: none;">
+          <li><i class="fa-solid fa-arrow-right"></i><a href="#about" class="text-decoration-none">Acerca de mí</a></li>
+          <li><i class="fa-solid fa-arrow-right"></i><a href="#education" class="text-decoration-none">Educación</a></li>
+          <li><i class="fa-solid fa-arrow-right"></i><a href="#experience" class="text-decoration-none">Experiencia</a></li>
+          <li><i class="fa-solid fa-arrow-right"></i><a href="#skills" class="text-decoration-none">Habilidades</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide" class="description">
+          <h2 >Acerca de mí</h2>
+          <p>Profesional desarrolador web con mucha motivacion y entusiasmo.</p>
+        </div>
+        <div class="slide" class="description">
+          <h2>Educación</h2>
+          <p>Universidad XYZ - Título de Licenciatura en Informática</p>
+          <p>Año de graduación: 2022</p>
+          <h3>Escuela ABC - Título de Bachiller en Ciencias</h3>
+          <p>Año de graduación: 2018</p>
+        </div>
+        <div class="slide" class="description">
+          <h2>Experiencia</h2>
+        <h3>Desarrollador Web Junior en Empresa 123</h3>
+        <p>Enero 2020 - Actualidad</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <h3>Voluntario en Proyecto 456</h3>
+        <p>Junio 2019 - Diciembre 2019</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        </div>
+      </div>
+      <button class="prev">Anterior</button>
+      <button class="next">Siguiente</button>
+    </div>
+    
+    
+    
+<script src="js/eventos.js"></script>
+  </body>
+
+</html>
